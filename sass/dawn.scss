@@ -1,0 +1,182 @@
+/*
+Dawn
+A simple Tumblr Dashboard theme for XKit.
+Made by Jean-François Goncalves
+This work is under the MIT licence.
+*/
+
+// VARIABLES
+$background: rgba(0,0,0,0.30);
+$post: rgba(255, 255, 255, 1);
+$blue: rgba(8, 163, 253, 0.5);
+
+
+body {
+	background: url('https://24.media.tumblr.com/6ae42cf8ab862427b121861ce0b86e08/tumblr_n28v2dOIf61qcb0gvo1_1280.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Search field */
+.search_form_row {
+    background: $background;
+    //border: 1px solid transparentize($post, 0.5);
+}
+
+#content {
+	background: $background;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;	
+}
+
+/* HELLA NEW BLOOD ORANGE */
+#tab_switching .tab_notice, #header .tab .tab_notice, .popover_blogs .tab_notice, .blog_menu .selected_blog .tab_notice {
+    background-color: #D8320B; /* HELLA NEW BLOOD ORANGE */
+}
+
+#header .selection_nipple {
+    margin: -1px 0 0 -12px;
+    border-bottom: 12px solid $background;
+}
+
+.post {
+	border-radius: 3px;
+}
+
+.post.new_post {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.post_content {
+	background: transparent !important;
+}
+
+.post_avatar {
+    background-color: transparent;
+    & .post_avatar_link {
+        -webkit-border-radius: 99px;
+        border-radius: 99px;
+    }
+}
+
+.right_column {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;  
+    padding-bottom: 0px;
+    margin-top: -1px;  
+}
+
+/* Color statistic numbers */
+.controls_section a .count { 
+    color: transparentize($post, 0.4);
+}
+
+/* Color statistic labels */
+.controls_section li a {
+    color: transparentize($post, 0.4);
+}
+
+/* Color of the blog title */
+.controls_section .currently_selected_blog {
+    color: transparentize($post, 0.1);
+}
+
+#right_column:after {
+	background: none !important;
+}
+
+.controls_section li {
+	background: transparent;
+}
+
+.controls_section li.account_header, .controls_section li.editors_header, .controls_section li.contributors_header, .controls_section li.section_header {
+    color: transparentize($post, 0.2);
+}
+
+/* Fixing ugly gradient on recommended blogs */
+
+.controls_section.user_list li a:before {
+    background: transparent;
+    border-right: transparent;
+}
+
+.controls_section.user_list li:hover a:before, .control_hover .controls_section.user_list li:active a:before {
+    background: transparent;
+    border-right: transparent;
+}
+
+/* Fixing the plus sign on recommanded blogs */
+
+div.ui_follow, .controls_section li div.follow {
+    color: transparentize($post, 0.3);
+}
+
+.controls_section .item:hover .icon_plus {
+    color: transparentize($post, 0.3);
+}
+
+div.ui_follow:hover, .controls_section li .follow:hover {
+    background: $blue;
+}
+
+/* Rounding avatar on Recommended blogs */
+.controls_section.user_list .avatar {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
+
+/* Fixing gradients on Tumblr Radar */
+.radar .radar_footer .radar_avatar:before {
+    background: transparent;
+}
+
+/* Fixing the plus sign on Tumblr Radar */
+.radar .radar_footer .follow {
+    color: transparentize($post, 0.3);
+    margin-right: 6px;
+}
+
+.radar .radar_footer .follow:hover {
+    background: $blue;
+}
+
+/* Avatar Tumblr Radar */
+.radar .radar_tumblelog_avatar {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+    margin-left: 8px;
+    margin-right: 12px;
+}
+
+.radar .radar_avatar img {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
+
+#pagination a {
+    color: $post;
+    background: transparentize($background, 0.1);
+    border-radius: 3px;
+}
+
+.footer_links a {
+    color: $post;
+}
+
+/* XKIT EXTRAS */
+
+/* Fixing the color of that ugly light */
+#xcleanfeedindicator {
+    box-shadow: none;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgb(228, 20, 20);
+    margin-left: 3px;
+    &.on {
+        background: rgb(26, 177, 26);
+    }
+}
