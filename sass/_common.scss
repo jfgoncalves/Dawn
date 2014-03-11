@@ -68,23 +68,84 @@ body {
     }
 }
 
+/* Compose */
+
+.plexi.show.color {
+    background: rgba(0, 0, 0, 0.7);
+}
+
 // ASK
 
 .send_fan_mail {
-    margin: 10px 10px 20px 10px;
+    margin: 10px 10px 20px 40px;
     background: $blue;
     &:hover {
         background: opacify($blue, 0.3);
     }
 }
 
-// FOLLOWERS
+// ACTIVITY
 
-.chrome.blue {
-    background: opacify($blue, 0.2);
-    border-color: opacify($blue, 0.2);
-    &:hover {
-        background: opacify($blue, 0.3);
-        border-color: opacify($blue, 0.3);
+/* Rounding and clearing avatars */
+
+.ui_jumbo_avatar .avatar_image, .ui_jumbo_avatar .avatar_frame, .ui_jumbo_avatar .avatar_glass {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
+
+.ui_jumbo_avatar .avatar_frame {
+    border: none;
+}
+
+.ui_jumbo_avatar .avatar_image {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+// QUEUE
+
+/* making the queue setter readable */
+
+.dashboard_options_form, .tag_psa {
+    border: none;
+    background: $background;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: $post;
+}
+
+.dashboard_options_form .dashboard_options_form_disclaimer {
+    color: $post;
+    & a {
+        color: $post;
     }
+}
+
+.post_full .post_avatar .queue .publish_info.day {
+    background: $background;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    color: $post;
+    padding-top: 10px;
+}
+
+.post_full .post_avatar .queue .publish_info.time {
+    background: $background;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    color: transparentize($post, 0.2);
+    padding-bottom: 10px;
+}
+
+.post_full .post_avatar .publish_info.time {
+    top: 47px;
+}
+
+// FOLLOWING
+
+#dashboard_useraction_following #container #content, #dashboard_lookup_lookup_contacts #container #content, #dashboard_promoted_directory #container #content {
+    padding: 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
+    background: url('/images/content_bg_directory.png?2') top left repeat-y #fafafa;
 }

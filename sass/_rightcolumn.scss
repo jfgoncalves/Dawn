@@ -96,10 +96,14 @@ div.ui_follow:hover, .controls_section li .follow:hover {
     -webkit-border-radius: 99px;
     border-radius: 99px;
     margin-left: 8px;
-    margin-right: 12px;
+    margin-right: 8px;
 }
 
 .radar .radar_avatar img {
     -webkit-border-radius: 99px;
     border-radius: 99px;
+}
+
+.radar .radar_tumblelog_label .subheading {
+    font-size: 10px;
 }

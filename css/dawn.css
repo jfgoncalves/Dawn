@@ -50,18 +50,63 @@ body {
   .footer_links a:hover {
     color: white; }
 
+/* Compose */
+.plexi.show.color {
+  background: rgba(0, 0, 0, 0.7); }
+
 .send_fan_mail {
-  margin: 10px 10px 20px 10px;
+  margin: 10px 10px 20px 40px;
   background: rgba(8, 163, 253, 0.5); }
   .send_fan_mail:hover {
     background: rgba(8, 163, 253, 0.8); }
 
-.chrome.blue {
-  background: rgba(8, 163, 253, 0.7);
-  border-color: rgba(8, 163, 253, 0.7); }
-  .chrome.blue:hover {
-    background: rgba(8, 163, 253, 0.8);
-    border-color: rgba(8, 163, 253, 0.8); }
+/* Rounding and clearing avatars */
+.ui_jumbo_avatar .avatar_image, .ui_jumbo_avatar .avatar_frame, .ui_jumbo_avatar .avatar_glass {
+  -webkit-border-radius: 99px;
+  border-radius: 99px; }
+
+.ui_jumbo_avatar .avatar_frame {
+  border: none; }
+
+.ui_jumbo_avatar .avatar_image {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/* making the queue setter readable */
+.dashboard_options_form, .tag_psa {
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: white; }
+
+.dashboard_options_form .dashboard_options_form_disclaimer {
+  color: white; }
+  .dashboard_options_form .dashboard_options_form_disclaimer a {
+    color: white; }
+
+.post_full .post_avatar .queue .publish_info.day {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  padding-top: 10px; }
+
+.post_full .post_avatar .queue .publish_info.time {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 10px; }
+
+.post_full .post_avatar .publish_info.time {
+  top: 47px; }
+
+#dashboard_useraction_following #container #content, #dashboard_lookup_lookup_contacts #container #content, #dashboard_promoted_directory #container #content {
+  padding: 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0;
+  background: url("/images/content_bg_directory.png?2") top left repeat-y #fafafa; }
 
 /* NAVIGATION */
 /* Top navigation item */
@@ -214,11 +259,14 @@ div.ui_follow:hover, .controls_section li .follow:hover {
   -webkit-border-radius: 99px;
   border-radius: 99px;
   margin-left: 8px;
-  margin-right: 12px; }
+  margin-right: 8px; }
 
 .radar .radar_avatar img {
   -webkit-border-radius: 99px;
   border-radius: 99px; }
+
+.radar .radar_tumblelog_label .subheading {
+  font-size: 10px; }
 
 /* XKIT EXTRAS */
 /* CLEANFEED */
