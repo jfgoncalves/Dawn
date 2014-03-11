@@ -105,6 +105,11 @@ body {
     box-shadow: none;
 }
 
+.ui_notes .avatar, .ui_notes .avatar .inner_frame {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
+
 // QUEUE
 
 /* making the queue setter readable */
