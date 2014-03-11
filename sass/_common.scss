@@ -1,0 +1,67 @@
+// VARIABLES
+
+$background: rgba(0,0,0,0.30);
+$post: rgba(255, 255, 255, 1);
+$blue: rgba(8, 163, 253, 0.5);
+
+body {
+	background: url('https://31.media.tumblr.com/7ea80ee716d931c2fab61c131c11fab3/tumblr_n29wm7xJi51qcb0gvo1_1280.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Search field */
+
+.search_form_row {
+    background: $background;
+    //border: 1px solid transparentize($post, 0.5);
+    
+}
+
+/* Main Menu */
+
+.tab_bar .tab.iconic .tab_anchor {
+    opacity: 0.8;
+}
+
+.tab_bar .tab.iconic:hover .tab_anchor, .tab_bar .tab.iconic:active .tab_anchor {
+    opacity: 1;
+}
+
+.tab_bar .tab {
+    color: transparentize($post, 0.2);
+    &:hover {
+        color: $post;
+    }
+}
+#content {
+	background: $background;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;	
+}
+
+/* HELLA NEW BLOOD ORANGE */
+
+#tab_switching .tab_notice, #header .tab .tab_notice, .popover_blogs .tab_notice, .blog_menu .selected_blog .tab_notice {
+    background-color: #D8320B;
+    border-radius: 3px;
+}
+
+/* Arrow representing current position in the header menu */
+
+#header .selection_nipple {
+    margin: -1px 0 0 -12px;
+    border-bottom: 12px solid $background;
+}
+
+/* FOOTER */
+
+.footer_links a {
+    color: transparentize($post, 0.2);
+    &:hover {
+        color: $post;
+    }
+}

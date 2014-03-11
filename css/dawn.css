@@ -6,7 +6,7 @@ Made by Jean-François Goncalves
 This work is under the MIT licence.
 */
 body {
-  background: url("https://24.media.tumblr.com/6ae42cf8ab862427b121861ce0b86e08/tumblr_n28v2dOIf61qcb0gvo1_1280.jpg") center center no-repeat;
+  background: url("https://31.media.tumblr.com/7ea80ee716d931c2fab61c131c11fab3/tumblr_n29wm7xJi51qcb0gvo1_1280.jpg") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,6 +17,18 @@ body {
 .search_form_row {
   background: rgba(0, 0, 0, 0.3); }
 
+/* Main Menu */
+.tab_bar .tab.iconic .tab_anchor {
+  opacity: 0.8; }
+
+.tab_bar .tab.iconic:hover .tab_anchor, .tab_bar .tab.iconic:active .tab_anchor {
+  opacity: 1; }
+
+.tab_bar .tab {
+  color: rgba(255, 255, 255, 0.8); }
+  .tab_bar .tab:hover {
+    color: white; }
+
 #content {
   background: rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 6px;
@@ -25,18 +37,73 @@ body {
 /* HELLA NEW BLOOD ORANGE */
 #tab_switching .tab_notice, #header .tab .tab_notice, .popover_blogs .tab_notice, .blog_menu .selected_blog .tab_notice {
   background-color: #D8320B;
-  /* HELLA NEW BLOOD ORANGE */ }
+  border-radius: 3px; }
 
+/* Arrow representing current position in the header menu */
 #header .selection_nipple {
   margin: -1px 0 0 -12px;
   border-bottom: 12px solid rgba(0, 0, 0, 0.3); }
 
-.post {
-  border-radius: 3px; }
+/* FOOTER */
+.footer_links a {
+  color: rgba(255, 255, 255, 0.8); }
+  .footer_links a:hover {
+    color: white; }
 
-.post.new_post {
-  -webkit-border-radius: 3px;
+/* NAVIGATION */
+/* Top navigation item */
+#dashboard_controls a, #dashboard_controls .control {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: none; }
+
+#dashboard_controls a:hover {
+  color: white; }
+
+/* Fixing color of navigation arrows */
+#dashboard_controls .dashboard_controls_arrow_first_page {
+  background: url("https://31.media.tumblr.com/80917e688e5a148a705531368d5e56dc/tumblr_inline_n29r83foMO1qc8maj.png") !important; }
+
+#dashboard_controls .dashboard_controls_arrow_left {
+  background: url("https://31.media.tumblr.com/4fcf9028b898f91101f861f41372200d/tumblr_inline_n29r8gve3w1qc8maj.png") !important; }
+
+#dashboard_controls .dashboard_controls_arrow_right {
+  background: url("https://31.media.tumblr.com/04e3d3376bacb1d86a751cd012097c99/tumblr_inline_n29r8nzWNE1qc8maj.png") !important; }
+
+/* Bottom Pagination */
+#pagination a {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 3px; }
+  #pagination a:hover {
+    color: white; }
+
+/* CONTENT */
+/* Everything concerning posts */
+.post_full {
+  border-radius: 3px; }
+  .post_full:hover {
+    border-top-right-radius: 16px; }
+
+/* Create new posts */
+/* New post box */
+.post.new_post {
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+/* Post author color */
+.post_full .post_header, .post_full .post_header a {
+  color: rgba(0, 0, 0, 0.5); }
+
+.post .post_header a:hover {
+  color: rgba(0, 0, 0, 0.7); }
+
+/* Post follow button */
+.post .post_info .reblog_follow_button.active i, .post .post_info .reblog_follow_button:hover i, .post .post_info .reblog_follow_button.onboard i {
+  background-color: rgba(8, 163, 253, 0.7); }
+
+/* notes */
+.post_full .post_footer {
+  color: rgba(0, 0, 0, 0.5); }
 
 .post_content {
   background: transparent !important; }
@@ -47,6 +114,18 @@ body {
     -webkit-border-radius: 99px;
     border-radius: 99px; }
 
+/* Fixing the top right corner on hover */
+.post_full .post_permalink {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(to right top, #c1c1c1 0%, transparent 80%);
+  border: none;
+  border-bottom-left-radius: 6px; }
+
+.post_full .post_permalink:before {
+  display: none; }
+
+/* Right Column */
 .right_column {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -64,6 +143,10 @@ body {
 /* Color of the blog title */
 .controls_section .currently_selected_blog {
   color: rgba(255, 255, 255, 0.9); }
+
+.controls_section a .count canvas {
+  filter: grayscale(100%) brightness(150%);
+  -webkit-filter: grayscale(100%) brightness(150%); }
 
 #right_column:after {
   background: none !important; }
@@ -93,7 +176,7 @@ div.ui_follow, .controls_section li div.follow {
 div.ui_follow:hover, .controls_section li .follow:hover {
   background: rgba(8, 163, 253, 0.5); }
 
-/* Rounding avatar on Recommended blogs */
+/* Rounding avatars on Recommended blogs */
 .controls_section.user_list .avatar {
   -webkit-border-radius: 99px;
   border-radius: 99px; }
@@ -121,15 +204,8 @@ div.ui_follow:hover, .controls_section li .follow:hover {
   -webkit-border-radius: 99px;
   border-radius: 99px; }
 
-#pagination a {
-  color: white;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3px; }
-
-.footer_links a {
-  color: white; }
-
 /* XKIT EXTRAS */
+/* CLEANFEED */
 /* Fixing the color of that ugly light */
 #xcleanfeedindicator {
   box-shadow: none;

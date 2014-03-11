@@ -1,0 +1,101 @@
+
+/* Right Column */
+
+.right_column {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;  
+    padding-bottom: 0px;
+    margin-top: -1px;  
+}
+
+/* Color statistic numbers */
+.controls_section a .count { 
+    color: transparentize($post, 0.4);
+}
+
+/* Color statistic labels */
+.controls_section li a {
+    color: transparentize($post, 0.4);
+}
+
+/* Color of the blog title */
+.controls_section .currently_selected_blog {
+    color: transparentize($post, 0.1);
+}
+
+.controls_section a .count canvas {
+    filter: grayscale(100%) brightness(150%);
+    -webkit-filter: grayscale(100%) brightness(150%);
+}
+
+#right_column:after {
+	background: none !important;
+}
+
+.controls_section li {
+	background: transparent;
+}
+
+.controls_section li.account_header, .controls_section li.editors_header, .controls_section li.contributors_header, .controls_section li.section_header {
+    color: transparentize($post, 0.2);
+}
+
+/* Fixing ugly gradient on recommended blogs */
+
+.controls_section.user_list li a:before {
+    background: transparent;
+    border-right: transparent;
+}
+
+.controls_section.user_list li:hover a:before, .control_hover .controls_section.user_list li:active a:before {
+    background: transparent;
+    border-right: transparent;
+}
+
+/* Fixing the plus sign on recommanded blogs */
+
+div.ui_follow, .controls_section li div.follow {
+    color: transparentize($post, 0.3);
+}
+
+.controls_section .item:hover .icon_plus {
+    color: transparentize($post, 0.3);
+}
+
+div.ui_follow:hover, .controls_section li .follow:hover {
+    background: $blue;
+}
+
+/* Rounding avatars on Recommended blogs */
+.controls_section.user_list .avatar {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
+
+/* Fixing gradients on Tumblr Radar */
+.radar .radar_footer .radar_avatar:before {
+    background: transparent;
+}
+
+/* Fixing the plus sign on Tumblr Radar */
+.radar .radar_footer .follow {
+    color: transparentize($post, 0.3);
+    margin-right: 6px;
+}
+
+.radar .radar_footer .follow:hover {
+    background: $blue;
+}
+
+/* Avatar Tumblr Radar */
+.radar .radar_tumblelog_avatar {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+    margin-left: 8px;
+    margin-right: 12px;
+}
+
+.radar .radar_avatar img {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
