@@ -50,6 +50,12 @@ body {
   .footer_links a:hover {
     color: white; }
 
+.send_fan_mail {
+  margin: 10px 10px 20px 10px;
+  background: rgba(8, 163, 253, 0.5); }
+  .send_fan_mail:hover {
+    background: rgba(8, 163, 253, 0.8); }
+
 /* NAVIGATION */
 /* Top navigation item */
 #dashboard_controls a, #dashboard_controls .control {

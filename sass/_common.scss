@@ -4,6 +4,8 @@ $background: rgba(0,0,0,0.30);
 $post: rgba(255, 255, 255, 1);
 $blue: rgba(8, 163, 253, 0.5);
 
+// DASHBOARD
+
 body {
 	background: url('https://31.media.tumblr.com/7ea80ee716d931c2fab61c131c11fab3/tumblr_n29wm7xJi51qcb0gvo1_1280.jpg') center center no-repeat;
     -webkit-background-size: cover;
@@ -63,5 +65,15 @@ body {
     color: transparentize($post, 0.2);
     &:hover {
         color: $post;
+    }
+}
+
+// ASK
+
+.send_fan_mail {
+    margin: 10px 10px 20px 10px;
+    background: $blue;
+    &:hover {
+        background: opacify($blue, 0.3);
     }
 }
