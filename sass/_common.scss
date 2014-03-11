@@ -1,0 +1,151 @@
+// VARIABLES
+
+$background: rgba(0,0,0,0.30);
+$post: rgba(255, 255, 255, 1);
+$blue: rgba(8, 163, 253, 0.5);
+
+// DASHBOARD
+
+body {
+	background: url('https://31.media.tumblr.com/7ea80ee716d931c2fab61c131c11fab3/tumblr_n29wm7xJi51qcb0gvo1_1280.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Search field */
+
+.search_form_row {
+    background: $background;
+    //border: 1px solid transparentize($post, 0.5);
+    
+}
+
+/* Main Menu */
+
+.tab_bar .tab.iconic .tab_anchor {
+    opacity: 0.8;
+}
+
+.tab_bar .tab.iconic:hover .tab_anchor, .tab_bar .tab.iconic:active .tab_anchor {
+    opacity: 1;
+}
+
+.tab_bar .tab {
+    color: transparentize($post, 0.2);
+    &:hover {
+        color: $post;
+    }
+}
+#content {
+	background: $background;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;	
+}
+
+/* HELLA NEW BLOOD ORANGE */
+
+#tab_switching .tab_notice, #header .tab .tab_notice, .popover_blogs .tab_notice, .blog_menu .selected_blog .tab_notice {
+    background-color: #D8320B;
+    border-radius: 3px;
+}
+
+/* Arrow representing current position in the header menu */
+
+#header .selection_nipple {
+    margin: -1px 0 0 -12px;
+    border-bottom: 12px solid $background;
+}
+
+/* FOOTER */
+
+.footer_links a {
+    color: transparentize($post, 0.2);
+    &:hover {
+        color: $post;
+    }
+}
+
+/* Compose */
+
+.plexi.show.color {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+// ASK
+
+.send_fan_mail {
+    margin: 10px 10px 20px 40px;
+    background: $blue;
+    &:hover {
+        background: opacify($blue, 0.3);
+    }
+}
+
+// ACTIVITY
+
+/* Rounding and clearing avatars */
+
+.ui_jumbo_avatar .avatar_image, .ui_jumbo_avatar .avatar_frame, .ui_jumbo_avatar .avatar_glass {
+    -webkit-border-radius: 99px;
+    border-radius: 99px;
+}
+
+.ui_jumbo_avatar .avatar_frame {
+    border: none;
+}
+
+.ui_jumbo_avatar .avatar_image {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+// QUEUE
+
+/* making the queue setter readable */
+
+.dashboard_options_form, .tag_psa {
+    border: none;
+    background: $background;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: $post;
+}
+
+.dashboard_options_form .dashboard_options_form_disclaimer {
+    color: $post;
+    & a {
+        color: $post;
+    }
+}
+
+.post_full .post_avatar .queue .publish_info.day {
+    background: $background;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    color: $post;
+    padding-top: 10px;
+}
+
+.post_full .post_avatar .queue .publish_info.time {
+    background: $background;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    color: transparentize($post, 0.2);
+    padding-bottom: 10px;
+}
+
+.post_full .post_avatar .publish_info.time {
+    top: 47px;
+}
+
+// FOLLOWING
+
+#dashboard_useraction_following #container #content, #dashboard_lookup_lookup_contacts #container #content, #dashboard_promoted_directory #container #content {
+    padding: 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
+    background: url('/images/content_bg_directory.png?2') top left repeat-y #fafafa;
+}

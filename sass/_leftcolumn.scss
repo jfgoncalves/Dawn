@@ -1,0 +1,105 @@
+/* NAVIGATION */
+
+/* Top navigation item */
+
+#dashboard_controls a, #dashboard_controls .control {
+    color: transparentize($post, 0.2);
+    text-shadow: none;
+}
+
+#dashboard_controls a:hover {
+    color: $post;
+}
+
+/* Fixing color of navigation arrows */
+
+#dashboard_controls .dashboard_controls_arrow_first_page {
+    background: url('https://31.media.tumblr.com/80917e688e5a148a705531368d5e56dc/tumblr_inline_n29r83foMO1qc8maj.png') !important;
+}
+
+#dashboard_controls .dashboard_controls_arrow_left {
+    background: url('https://31.media.tumblr.com/4fcf9028b898f91101f861f41372200d/tumblr_inline_n29r8gve3w1qc8maj.png') !important;
+}
+
+#dashboard_controls .dashboard_controls_arrow_right {
+    background: url('https://31.media.tumblr.com/04e3d3376bacb1d86a751cd012097c99/tumblr_inline_n29r8nzWNE1qc8maj.png') !important;
+}
+
+/* Bottom Pagination */
+
+#pagination a {
+    color: transparentize($post, 0.2);
+    background: transparentize($background, 0.1);
+    border-radius: 3px;
+    &:hover {
+        color: $post;
+    }
+}
+
+/* CONTENT */
+
+/* Everything concerning posts */
+
+.post_full {
+	border-radius: 3px;
+	&:hover {
+    	border-top-right-radius: 16px; // Adjusting the border for the permalink effect
+	}
+}
+
+/* Create new posts */
+
+/* New post box */
+
+.post.new_post {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/* Post author color */
+
+.post_full .post_header, .post_full .post_header a {
+    color: opacify($background, 0.2);
+}
+
+.post .post_header a:hover {
+    color: opacify($background, 0.4);
+}
+
+/* Post follow button */
+
+.post .post_info .reblog_follow_button.active i, .post .post_info .reblog_follow_button:hover i, .post .post_info .reblog_follow_button.onboard i {
+    background-color: opacify($blue, 0.2);
+}
+
+/* notes */
+
+.post_full .post_footer {
+    color: opacify($background, 0.2);
+}
+
+.post_content {
+	background: transparent !important;
+}
+
+.post_avatar {
+    background-color: transparent;
+    & .post_avatar_link {
+        -webkit-border-radius: 99px;
+        border-radius: 99px;
+    }
+}
+
+/* Fixing the top right corner on hover */
+
+.post_full .post_permalink {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to right top, rgba(193,193,193,1) 0%, transparent 80%);
+    border: none;
+    border-bottom-left-radius: 6px;
+}
+
+.post_full .post_permalink:before {
+    display: none;
+}

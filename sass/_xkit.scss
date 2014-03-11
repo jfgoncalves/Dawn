@@ -1,0 +1,15 @@
+/* XKIT EXTRAS */
+
+/* CLEANFEED */
+
+/* Fixing the color of that ugly light */
+#xcleanfeedindicator {
+    box-shadow: none;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgb(228, 20, 20);
+    margin-left: 3px;
+    &.on {
+        background: rgb(26, 177, 26);
+    }
+}
