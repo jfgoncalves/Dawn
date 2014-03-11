@@ -36,6 +36,20 @@
     }
 }
 
+/* Inline notifications */
+
+.notification .notification_sentence a {
+    color: $post;
+}
+
+.notification .notification_sentence {
+    color: $post;
+}
+
+.notification .avatar_frame img, .notes .note .avatar_frame img, .ui_avatar .frame img {
+    border-radius: 99px;
+}
+
 /* CONTENT */
 
 /* Everything concerning posts */

@@ -7,7 +7,8 @@ $blue: rgba(8, 163, 253, 0.5);
 // DASHBOARD
 
 body {
-	background: url('https://31.media.tumblr.com/7ea80ee716d931c2fab61c131c11fab3/tumblr_n29wm7xJi51qcb0gvo1_1280.jpg') center center no-repeat;
+	background: url('https://31.media.tumblr.com/254c76a2393d396c2f9c0f3f5c2347a8/tumblr_n2aaooyaQt1qcb0gvo1_500.jpg') center center no-repeat;
+	/* Sunrise by Brian Duncan on 500px - http://500px.com/photo/20031647 */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,18 +20,20 @@ body {
 
 .search_form_row {
     background: $background;
-    //border: 1px solid transparentize($post, 0.5);
-    
+    -moz-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
+    -o-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
+    box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
 }
 
 /* Main Menu */
 
 .tab_bar .tab.iconic .tab_anchor {
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .tab_bar .tab.iconic:hover .tab_anchor, .tab_bar .tab.iconic:active .tab_anchor {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .tab_bar .tab {
