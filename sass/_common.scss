@@ -77,3 +77,14 @@ body {
         background: opacify($blue, 0.3);
     }
 }
+
+// FOLLOWERS
+
+.chrome.blue {
+    background: opacify($blue, 0.2);
+    border-color: opacify($blue, 0.2);
+    &:hover {
+        background: opacify($blue, 0.3);
+        border-color: opacify($blue, 0.3);
+    }
+}
