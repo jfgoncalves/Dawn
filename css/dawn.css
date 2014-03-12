@@ -157,6 +157,19 @@ p.result, p.result .title, p.result a {
 .ui_dialog_lock.opaque {
   background: rgba(0, 0, 0, 0.7); }
 
+/* Notifications */
+/* Background notification */
+#toaster .toast .toast_border {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 2px; }
+
+/* Rounded avatar on notification */
+#toaster .frame {
+  border-radius: 99px; }
+
+#toaster .frame img {
+  border-radius: 99px; }
+
 /* NAVIGATION */
 /* Top navigation item */
 #dashboard_controls a, #dashboard_controls .control {

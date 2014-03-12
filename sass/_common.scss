@@ -213,3 +213,22 @@ p.result, p.result .title, p.result a {
 .ui_dialog_lock.opaque {
     background: opacify($background, 0.4);
 }
+
+/* Notifications */
+
+/* Background notification */
+
+#toaster .toast .toast_border {
+    background-color: transparentize($post, 0.8) !important;
+    border-radius: 2px;
+}
+
+/* Rounded avatar on notification */
+
+#toaster .frame {
+    border-radius: 99px;
+}
+
+#toaster .frame img {
+    border-radius: 99px;
+}
