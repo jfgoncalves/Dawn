@@ -117,3 +117,9 @@
 .post_full .post_permalink:before {
     display: none;
 }
+
+/* Replies to people */
+
+.post_full.is_note .avatar img {
+    border-radius: 99px;
+}

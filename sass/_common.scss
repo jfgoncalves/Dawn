@@ -74,7 +74,7 @@ body {
 /* Compose */
 
 .plexi.show.color {
-    background: rgba(0, 0, 0, 0.7);
+    background: opacify($background, 0.4);
 }
 
 // ASK
@@ -156,4 +156,12 @@ body {
     -webkit-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
     background: url('/images/content_bg_directory.png?2') top left repeat-y #fafafa;
+}
+
+// OTHER
+
+/* Opaque background when asking confirmation */
+
+.ui_dialog_lock.opaque {
+    background: opacify($background, 0.4);
 }

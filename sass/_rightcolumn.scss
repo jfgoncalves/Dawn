@@ -9,19 +9,42 @@
 }
 
 /* Color statistic numbers */
+
 .controls_section a .count { 
     color: transparentize($post, 0.4);
 }
 
 /* Color statistic labels */
+
 .controls_section li a {
     color: transparentize($post, 0.4);
 }
 
 /* Color of the blog title */
+
 .controls_section .currently_selected_blog {
     color: transparentize($post, 0.1);
 }
+
+/* Color of the URL link */
+
+.blog_menu .selected_blog #open_blog_link {
+    color: transparentize($post, 0.5);
+}
+
+/* Fixing padding color of blog spot */
+
+.controls_section .popover_button_blogs {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+/* rounding avatars on popover choosing blog menu */
+
+.popover_blogs .blog_icon {
+    border-radius: 99px;
+}
+
+/* Making the activity chart white for webkit browsers */
 
 .controls_section a .count canvas {
     filter: grayscale(100%) brightness(150%);
@@ -71,17 +94,20 @@ div.ui_follow:hover, .controls_section li .follow:hover {
 }
 
 /* Rounding avatars on Recommended blogs */
+
 .controls_section.user_list .avatar {
     -webkit-border-radius: 99px;
     border-radius: 99px;
 }
 
 /* Fixing gradients on Tumblr Radar */
+
 .radar .radar_footer .radar_avatar:before {
     background: transparent;
 }
 
 /* Fixing the plus sign on Tumblr Radar */
+
 .radar .radar_footer .follow {
     color: transparentize($post, 0.3);
     margin-right: 6px;
@@ -92,6 +118,7 @@ div.ui_follow:hover, .controls_section li .follow:hover {
 }
 
 /* Avatar Tumblr Radar */
+
 .radar .radar_tumblelog_avatar {
     -webkit-border-radius: 99px;
     border-radius: 99px;

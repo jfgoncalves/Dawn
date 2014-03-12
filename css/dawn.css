@@ -117,6 +117,10 @@ body {
   border-radius: 15px 15px 0 0;
   background: url("/images/content_bg_directory.png?2") top left repeat-y #fafafa; }
 
+/* Opaque background when asking confirmation */
+.ui_dialog_lock.opaque {
+  background: rgba(0, 0, 0, 0.7); }
+
 /* NAVIGATION */
 /* Top navigation item */
 #dashboard_controls a, #dashboard_controls .control {
@@ -202,6 +206,10 @@ body {
 .post_full .post_permalink:before {
   display: none; }
 
+/* Replies to people */
+.post_full.is_note .avatar img {
+  border-radius: 99px; }
+
 /* Right Column */
 .right_column {
   -webkit-border-radius: 3px;
@@ -221,6 +229,19 @@ body {
 .controls_section .currently_selected_blog {
   color: rgba(255, 255, 255, 0.9); }
 
+/* Color of the URL link */
+.blog_menu .selected_blog #open_blog_link {
+  color: rgba(255, 255, 255, 0.5); }
+
+/* Fixing padding color of blog spot */
+.controls_section .popover_button_blogs {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08); }
+
+/* rounding avatars on popover choosing blog menu */
+.popover_blogs .blog_icon {
+  border-radius: 99px; }
+
+/* Making the activity chart white for webkit browsers */
 .controls_section a .count canvas {
   filter: grayscale(100%) brightness(150%);
   -webkit-filter: grayscale(100%) brightness(120%); }
