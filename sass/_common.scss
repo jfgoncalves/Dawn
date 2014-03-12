@@ -225,10 +225,14 @@ p.result, p.result .title, p.result a {
 
 /* Rounded avatar on notification */
 
-#toaster .frame {
+#toaster .frame.box_left {
     border-radius: 99px;
 }
 
-#toaster .frame img {
+#toaster .frame.box_right {
+    border-radius: 2px;
+}
+
+#toaster .frame.box_left img {
     border-radius: 99px;
 }

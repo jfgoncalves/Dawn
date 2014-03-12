@@ -164,10 +164,13 @@ p.result, p.result .title, p.result a {
   border-radius: 2px; }
 
 /* Rounded avatar on notification */
-#toaster .frame {
+#toaster .frame.box_left {
   border-radius: 99px; }
 
-#toaster .frame img {
+#toaster .frame.box_right {
+  border-radius: 2px; }
+
+#toaster .frame.box_left img {
   border-radius: 99px; }
 
 /* NAVIGATION */
