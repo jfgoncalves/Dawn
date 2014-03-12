@@ -19,11 +19,11 @@ body {
 /* Search field */
 
 .search_form_row {
-    background: $background;
-    -moz-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
-    -webkit-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
-    -o-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
-    box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.6);
+    background: transparent;
+    -moz-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
+    -o-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
+    box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
 }
 
 /* Main Menu */
