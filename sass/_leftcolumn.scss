@@ -109,6 +109,10 @@
 .post_full .post_permalink {
     width: 15px;
     height: 15px;
+    background-image: -moz-linear-gradient(to right top, rgba(193,193,193,1) 0%, transparent 80%);
+    background-image: -webkit-linear-gradient(to right top, rgba(193,193,193,1) 0%, transparent 80%);
+    background-image: -o-linear-gradient(to right top, rgba(193,193,193,1) 0%, transparent 80%);
+    background-image: -ms-linear-gradient(to right top, rgba(193,193,193,1) 0%, transparent 80%);
     background: linear-gradient(to right top, rgba(193,193,193,1) 0%, transparent 80%);
     border: none;
     border-bottom-left-radius: 6px;
