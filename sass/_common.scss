@@ -7,6 +7,7 @@ $blue: rgba(8, 163, 253, 0.5);
 // DASHBOARD
 
 body {
+    background: #292929;
 	background: url('http://static.tumblr.com/caixd5s/vUCn2bjwp/background2.jpg') center center no-repeat;
 	/* Sunrise by Brian Duncan on 500px - http://500px.com/photo/20031647 */
     -webkit-background-size: cover;
@@ -24,6 +25,11 @@ body {
     -webkit-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
     -o-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
     box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
+}
+
+/* Tumblr/web button */
+.search_query_input_controls .search_query_btn {
+    color: #060A16;
 }
 
 /* Main Menu */
@@ -85,6 +91,15 @@ body {
     &:hover {
         background: opacify($blue, 0.3);
     }
+}
+
+.no_posts_found {
+    background-color: transparent;
+    border: none;
+}
+
+.controls_section li.section_header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
 }
 
 // ACTIVITY
@@ -156,6 +171,39 @@ body {
     -webkit-border-radius: 15px 15px 0 0;
     border-radius: 15px 15px 0 0;
     background: url('/images/content_bg_directory.png?2') top left repeat-y #fafafa;
+}
+
+// HELP
+
+p.result, p.result .title, p.result a {
+    color: $post;
+}
+
+/* clearing the search form */
+
+.help_search {
+    border: none;
+    background: transparent;
+    -webkit-border-radius: none;
+    border-radius: none;
+}
+
+.help_search:after {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: none;
+}
+
+#help_full {
+    margin-top: -20px;
+}
+
+/* Contact button */
+
+.chrome.big.help_contact_support_button {
+    color: $post;
+    background: $blue;
+    border-color: transparent;
 }
 
 // OTHER
