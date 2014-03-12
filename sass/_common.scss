@@ -80,7 +80,7 @@ body {
 // ASK
 
 .send_fan_mail {
-    margin: 10px 10px 20px 40px;
+    margin: 10px 10px 20px 10px;
     background: $blue;
     &:hover {
         background: opacify($blue, 0.3);

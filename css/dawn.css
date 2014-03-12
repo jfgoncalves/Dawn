@@ -60,7 +60,7 @@ body {
   background: rgba(0, 0, 0, 0.7); }
 
 .send_fan_mail {
-  margin: 10px 10px 20px 40px;
+  margin: 10px 10px 20px 10px;
   background: rgba(8, 163, 253, 0.5); }
   .send_fan_mail:hover {
     background: rgba(8, 163, 253, 0.8); }
