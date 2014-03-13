@@ -247,6 +247,9 @@ p.result, p.result .title, p.result a {
     -webkit-border-radius: 99px;
     border-radius: 99px; }
 
+.post_avatar .post_sub_avatar {
+  border-radius: 99px; }
+
 /* Fixing the top right corner on hover */
 .post_full .post_permalink {
   width: 15px;
