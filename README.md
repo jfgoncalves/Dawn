@@ -7,9 +7,9 @@ The design team at Tumblr made an amazing job, but after quite some time of usin
 
 ## How to install
 
-1) Grab the [XKit extension](http://xkit.info/seven/download/).
-2) Once installed, open XKit by clicking on the new XKit icon in the Tumblr menu, click on the 'Get Extensions' tab, and install 'Theme Editor'. 
-3) Click on the 'Edit Theme' button in the sidebar, then copy/paste the content of dawn.css. Apply the changes and save. That's it!
+1. Grab the [XKit extension](http://xkit.info/seven/download/).
+2. Once installed, open XKit by clicking on the new XKit icon in the Tumblr menu, click on the 'Get Extensions' tab, and install 'Theme Editor'. 
+3. Click on the 'Edit Theme' button in the sidebar, then copy/paste the content of dawn.css. Apply the changes and save. That's it!
 
 ## Good, now I have a 'Edit Theme' button on my sidebar that I don't want. How do I get rid of it ?
 
