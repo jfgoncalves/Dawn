@@ -2,59 +2,63 @@
 /* Right Column */
 
 .right_column {
-    -webkit-border-radius: 3px;
-    border-radius: 3px;  
-    padding-bottom: 0px;
-    margin-top: -1px;  
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;  
+    padding-bottom: 0px !important;
+    margin-top: -1px !important;  
 }
 
 /* Color statistic numbers */
 
 .controls_section a .count { 
-    color: transparentize($post, 0.4);
+    color: transparentize($post, 0.4) !important;
 }
 
 /* Color statistic labels */
 
 .controls_section li a {
-    color: transparentize($post, 0.4);
+    color: transparentize($post, 0.4) !important;
 }
 
 /* Color of the blog title */
 
 .controls_section .currently_selected_blog {
-    color: transparentize($post, 0.1);
+    color: transparentize($post, 0.1) !important;
+}
+
+.popover_blogs span {
+    color: rgba(0, 0, 0, 0.7) !important;
 }
 
 /* Color of the URL link */
 
 .blog_menu .selected_blog #open_blog_link {
-    color: transparentize($post, 0.5);
+    color: transparentize($post, 0.5) !important;
 }
 
 /* Fixing padding color of blog spot */
 
 .controls_section .popover_button_blogs {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 /* rounding avatars on popover choosing blog menu */
 
 .popover_blogs .blog_icon {
-    border-radius: 99px;
+    border-radius: 99px !important;
 }
 
 /* Making the activity chart white for webkit browsers */
 
 .controls_section a .count canvas {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(100%) brightness(120%);
-    filter: grayscale(100%) brightness(150%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale") !important; /* Firefox 10+ */
+    filter: gray !important; /* IE6-9 */
+    -webkit-filter: grayscale(100%) brightness(120%) !important;
+    filter: grayscale(100%) brightness(150%) !important;
 }
 
 .controls_section .with_subtitle {
-    padding: 13px;
+    padding: 13px !important;
 }
 
 #right_column:after {
@@ -62,77 +66,77 @@
 }
 
 .controls_section li {
-	background: transparent;
+	background: transparent !important;
 }
 
 .controls_section li.account_header, .controls_section li.editors_header, .controls_section li.contributors_header, .controls_section li.section_header {
-    color: transparentize($post, 0.2);
+    color: transparentize($post, 0.2) !important;
 }
 
 /* Fixing ugly gradient on recommended blogs */
 
 .controls_section.user_list li a:before {
-    background: transparent;
-    border-right: transparent;
+    background: transparent !important;
+    border-right: transparent !important;
 }
 
 .controls_section.user_list li:hover a:before, .control_hover .controls_section.user_list li:active a:before {
-    background: transparent;
-    border-right: transparent;
+    background: transparent !important;
+    border-right: transparent !important;
 }
 
 /* Fixing the plus sign on recommanded blogs */
 
 div.ui_follow, .controls_section li div.follow {
-    color: transparentize($post, 0.3);
+    color: transparentize($post, 0.3) !important;
 }
 
 .controls_section .item:hover .icon_plus {
-    color: transparentize($post, 0.3);
+    color: transparentize($post, 0.3) !important;
 }
 
 div.ui_follow:hover, .controls_section li .follow:hover {
-    background: $blue;
+    background: $blue !important;
 }
 
 /* Rounding avatars on Recommended blogs */
 
 .controls_section.user_list .avatar {
-    -webkit-border-radius: 99px;
-    border-radius: 99px;
+    -webkit-border-radius: 99px !important;
+    border-radius: 99px !important;
 }
 
 /* Fixing gradients on Tumblr Radar */
 
 .radar .radar_footer .radar_avatar:before {
-    background: transparent;
+    background: transparent !important;
 }
 
 /* Fixing the plus sign on Tumblr Radar */
 
 .radar .radar_footer .follow {
-    color: transparentize($post, 0.3);
-    margin-right: 6px;
+    color: transparentize($post, 0.3) !important;
+    margin-right: 6px !important;
 }
 
 .radar .radar_footer .follow:hover {
-    background: $blue;
+    background: $blue !important;
 }
 
 /* Avatar Tumblr Radar */
 
 .radar .radar_tumblelog_avatar {
-    -webkit-border-radius: 99px;
-    border-radius: 99px;
-    margin-left: 8px;
-    margin-right: 8px;
+    -webkit-border-radius: 99px !important;
+    border-radius: 99px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
 }
 
 .radar .radar_avatar img {
-    -webkit-border-radius: 99px;
-    border-radius: 99px;
+    -webkit-border-radius: 99px !important;
+    border-radius: 99px !important;
 }
 
 .radar .radar_tumblelog_label .subheading {
-    font-size: 10px;
+    font-size: 10px !important;
 }

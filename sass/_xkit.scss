@@ -4,13 +4,13 @@
 
 /* Fixing the color of that ugly light */
 #xcleanfeedindicator {
-    box-shadow: none;
-    opacity: 0.8;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgb(228, 20, 20);
-    margin-left: 3px;
+    box-shadow: none !important;
+    opacity: 0.8 !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    background: rgb(228, 20, 20) !important;
+    margin-left: 3px !important;
     &.on {
-        background: rgb(26, 177, 26);
+        background: rgb(26, 177, 26) !important;
     }
 }
 

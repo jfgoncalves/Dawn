@@ -7,99 +7,103 @@ $blue: rgba(8, 163, 253, 0.5);
 // DASHBOARD
 
 body {
-    background: #292929;
-	background: url('http://static.tumblr.com/caixd5s/vUCn2bjwp/background2.jpg') center center no-repeat;
+    background: #292929 !important;
+	background: url('http://static.tumblr.com/caixd5s/vUCn2bjwp/background2.jpg') center center no-repeat !important;
 	/* Sunrise by Brian Duncan on 500px - http://500px.com/photo/20031647 */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+body#search_search {
+    background: #284057 !important;
 }
 
 /* Search field */
 
 .search_form_row {
-    background: transparent;
-    -moz-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
-    -webkit-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
-    -o-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
-    box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4);
+    background: transparent !important;
+    -moz-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4) !important;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4) !important;
+    -o-box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4) !important;
+    box-shadow: 0px 0px 1px 1px rgba(141, 141, 141, 0.4) !important;
 }
 
 /* Tumblr/web button */
 .search_query_input_controls .search_query_btn {
-    color: #060A16;
+    color: #060A16 !important;
 }
 
 /* Main Menu */
 
 .tab_bar .tab.iconic .tab_anchor {
-    opacity: 0.4;
+    opacity: 0.4 !important;
 }
 
 .tab_bar .tab.iconic:hover .tab_anchor, .tab_bar .tab.iconic:active .tab_anchor {
-    opacity: 0.8;
+    opacity: 0.8 !important;
 }
 
 .tab_bar .tab {
-    color: transparentize($post, 0.2);
+    color: transparentize($post, 0.2) !important;
     &:hover {
-        color: $post;
+        color: $post !important;
     }
 }
 #content {
-	background: $background;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;	
+	background: $background !important;
+	-webkit-border-radius: 6px !important;
+	border-radius: 6px !important;	
 }
 
 /* HELLA NEW BLOOD ORANGE */
 
 #tab_switching .tab_notice, #header .tab .tab_notice, .popover_blogs .tab_notice, .blog_menu .selected_blog .tab_notice {
-    background-color: #D8320B;
-    border-radius: 3px;
+    background-color: #D8320B !important;
+    border-radius: 3px !important;
 }
 
 /* Arrow representing current position in the header menu */
 
 #header .selection_nipple {
-    margin: -1px 0 0 -12px;
-    border-bottom: 12px solid $background;
+    margin: -1px 0 0 -12px !important;
+    border-bottom: 12px solid $background !important;
 }
 
 /* FOOTER */
 
 .footer_links a {
-    color: transparentize($post, 0.2);
+    color: transparentize($post, 0.2) !important;
     &:hover {
-        color: $post;
+        color: $post !important;
     }
 }
 
 /* Compose */
 
 .plexi.show.color {
-    background: opacify($background, 0.4);
+    background: opacify($background, 0.4) !important;
 }
 
 // ASK
 
 .send_fan_mail {
-    margin: 10px 10px 20px 10px;
-    background: $blue;
+    margin: 10px 10px 20px 10px !important;
+    background: $blue !important;
     &:hover {
-        background: opacify($blue, 0.3);
+        background: opacify($blue, 0.3) !important;
     }
 }
 
 .no_posts_found {
-    background-color: transparent;
-    border: none;
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .controls_section li.section_header {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 // ACTIVITY
@@ -107,22 +111,22 @@ body {
 /* Rounding and clearing avatars */
 
 .ui_jumbo_avatar .avatar_image, .ui_jumbo_avatar .avatar_frame, .ui_jumbo_avatar .avatar_glass {
-    -webkit-border-radius: 99px;
-    border-radius: 99px;
+    -webkit-border-radius: 99px !important;
+    border-radius: 99px !important;
 }
 
 .ui_jumbo_avatar .avatar_frame {
-    border: none;
+    border: none !important;
 }
 
 .ui_jumbo_avatar .avatar_image {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .ui_notes .avatar, .ui_notes .avatar .inner_frame {
-    -webkit-border-radius: 99px;
-    border-radius: 99px;
+    -webkit-border-radius: 99px !important;
+    border-radius: 99px !important;
 }
 
 // QUEUE
@@ -130,80 +134,80 @@ body {
 /* making the queue setter readable */
 
 .dashboard_options_form, .tag_psa {
-    border: none;
-    background: $background;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: $post;
+    border: none !important;
+    background: $background !important;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    color: $post !important;
 }
 
 .dashboard_options_form .dashboard_options_form_disclaimer {
-    color: $post;
+    color: $post !important;
     & a {
-        color: $post;
+        color: $post !important;
     }
 }
 
 .post_full .post_avatar .queue .publish_info.day {
-    background: $background;
-    -webkit-border-radius: 3px 3px 0 0;
-    border-radius: 3px 3px 0 0;
-    color: $post;
-    padding-top: 10px;
+    background: $background !important;
+    -webkit-border-radius: 3px 3px 0 0 !important;
+    border-radius: 3px 3px 0 0 !important;
+    color: $post !important;
+    padding-top: 10px !important;
 }
 
 .post_full .post_avatar .queue .publish_info.time {
-    background: $background;
-    -webkit-border-radius: 0 0 3px 3px;
-    border-radius: 0 0 3px 3px;
-    color: transparentize($post, 0.2);
-    padding-bottom: 10px;
+    background: $background !important;
+    -webkit-border-radius: 0 0 3px 3px !important;
+    border-radius: 0 0 3px 3px !important;
+    color: transparentize($post, 0.2) !important;
+    padding-bottom: 10px !important;
 }
 
 .post_full .post_avatar .publish_info.time {
-    top: 47px;
+    top: 47px !important;
 }
 
 // FOLLOWING
 
 #dashboard_useraction_following #container #content, #dashboard_lookup_lookup_contacts #container #content, #dashboard_promoted_directory #container #content {
-    padding: 0;
-    -webkit-border-radius: 15px 15px 0 0;
-    border-radius: 15px 15px 0 0;
-    background: url('/images/content_bg_directory.png?2') top left repeat-y #fafafa;
+    padding: 0 !important;
+    -webkit-border-radius: 15px 15px 0 0 !important;
+    border-radius: 15px 15px 0 0 !important;
+    background: url('/images/content_bg_directory.png?2') top left repeat-y #fafafa !important;
 }
 
 // HELP
 
 p.result, p.result .title, p.result a {
-    color: $post;
+    color: $post !important;
 }
 
 /* clearing the search form */
 
 .help_search {
-    border: none;
-    background: transparent;
-    -webkit-border-radius: none;
-    border-radius: none;
+    border: none !important;
+    background: transparent !important;
+    -webkit-border-radius: none !important;
+    border-radius: none !important;
 }
 
 .help_search:after {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    display: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    display: none !important;
 }
 
 #help_full {
-    margin-top: -20px;
+    margin-top: -20px !important;
 }
 
 /* Contact button */
 
 .chrome.big.help_contact_support_button {
-    color: $post;
-    background: $blue;
-    border-color: transparent;
+    color: $post !important;
+    background: $blue !important;
+    border-color: transparent !important;
 }
 
 // OTHER
@@ -211,7 +215,7 @@ p.result, p.result .title, p.result a {
 /* Opaque background when asking confirmation */
 
 .ui_dialog_lock.opaque {
-    background: opacify($background, 0.4);
+    background: opacify($background, 0.4) !important;
 }
 
 /* Notifications */
@@ -219,20 +223,34 @@ p.result, p.result .title, p.result a {
 /* Background notification */
 
 #toaster .toast .toast_border {
-    background-color: transparentize($post, 0.8) !important;
-    border-radius: 2px;
+    background-color: transparentize($post, 0.8) !important !important;
+    border-radius: 2px !important;
 }
 
 /* Rounded avatar on notification */
 
 #toaster .frame.box_left {
-    border-radius: 99px;
+    border-radius: 99px !important;
 }
 
 #toaster .frame.box_left img {
-    border-radius: 99px;
+    border-radius: 99px !important;
 }
 
 #toaster .frame.box_right {
-    border-radius: 2px;
+    border-radius: 2px !important;
+}
+
+// SEARCH
+
+.search_form_active .search_form_field:after {
+    border: none !important;
+}
+
+.search_form_active .search_form_field:before {
+    border: none !important;
+}
+
+.search_form_active .search_query {
+    color: $post !important;
 }
